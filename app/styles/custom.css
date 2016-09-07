@@ -1,0 +1,13 @@
+/*.navbar {
+	margin-bottom: 1px !important;
+}*/
+
+.navBar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  color: green;
+}

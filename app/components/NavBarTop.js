@@ -7,7 +7,7 @@ var PropTypes = React.PropTypes;
 var ButtonToolbar = require('react-bootstrap').ButtonToolbar;
 
 
-var NavBar = React.createClass({
+var NavBarTop = React.createClass({
 
 
 
@@ -30,8 +30,8 @@ var NavBar = React.createClass({
 
 });
 
-NavBar.propTypes = {
+NavBarTop.propTypes = {
 	bsStyles: PropTypes.object.isRequired
 }
 
-module.exports = NavBar;
+module.exports = NavBarTop;

@@ -1,9 +1,9 @@
 var React = require('react');
-var NavBar = require('../components/NavBar');
+var NavBarTop = require('../components/NavBarTop');
 
 // var PropTypes = React.PropTypes;
 
-var NavBarContainer = React.createClass({
+var NavBarTopContainer = React.createClass({
 	
 	getInitialState: function() {
 		return {
@@ -17,7 +17,7 @@ var NavBarContainer = React.createClass({
 	},
 	render: function() {
 		return (
-			<NavBar 
+			<NavBarTop 
 				bsStyles={this.state.bsStyles}/>
 		);
 	}
@@ -25,4 +25,4 @@ var NavBarContainer = React.createClass({
 });
 
 
-module.exports = NavBarContainer;
+module.exports = NavBarTopContainer;
