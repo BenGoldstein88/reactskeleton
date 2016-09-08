@@ -7,7 +7,9 @@ var VenueExpenseBox = React.createClass({
 			<div style={{
 				border: '1px solid cyan',
 				borderRadius: '5px',
-				margin: '5%'
+				margin: '5%',
+				minHeight: '30%',
+				maxHeight: '60%'
 			}}>
 				<h1>Venue Stuff </h1>
 

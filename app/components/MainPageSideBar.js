@@ -7,7 +7,10 @@ var MainPageSideBar = React.createClass({
 
 	render: function() {
 		return (
-			<div className='col-sm-3'>
+			<div className='col-sm-3' style={{
+				height: '100%',
+				border: '1px solid black'
+			}}>
 				<SiteMapIcon />
 				<RemindersBox />
 				<SuggestionsBox />

@@ -10,19 +10,35 @@ var AppMain = require('./AppMain')
 
 var Home = React.createClass({
 
+	getInitialState: function() {
+		return {
+			display: 'home' 
+		};
+	},
+	setDisplay: function(display) {
+		this.setState({
+			display: display
+		})
+	},
+	handleSelect: function(eventKey) {
+		this.setState({
+			display:'home'
+		})
+	},
 	render: function() {
 		return (
-			<div>
-				<StitchNavBar />
-				<AppMain />
-
-				<NavBarTopContainer />
+			<div style={{
+				height: '100%'
+			}}>
+				<StitchNavBar onSelect={this.handleSelect} display={this.state.display}/>
+				<AppMain setDisplay={this.setDisplay} display={this.state.display}/>
 			</div>
 		);
 	}
 
 });
 
+				// <NavBarTopContainer />
 
 
 module.exports = Home;

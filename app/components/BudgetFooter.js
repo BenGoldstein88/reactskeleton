@@ -7,7 +7,8 @@ var BudgetFooter = React.createClass({
 			<div style={{
 				border: '1px dotted orange',
 				bottom: '0',
-				textAlign: 'center'
+				textAlign: 'center',
+				marginBottom: '2.5%'
 			}}>
 				<h1>Budget Footer </h1>
 			</div>

@@ -6,7 +6,8 @@ var BudgetHeader = React.createClass({
 		return (
 			<div style={{
 				border: '1px dotted pink',
-				textAlign: 'center'
+				textAlign: 'center',
+				marginTop: '2.5%'
 			}}>
 				<h1>Budget</h1>
 
