@@ -12,12 +12,18 @@ var Home = React.createClass({
 
 	getInitialState: function() {
 		return {
-			display: 'home' 
+			display: 'home',
+			event: 'wedding' 
 		};
 	},
 	setDisplay: function(display) {
 		this.setState({
 			display: display
+		})
+	},
+	setEvent: function(eventType) {
+		this.setState({
+			event: eventType
 		})
 	},
 	handleSelect: function(eventKey) {
@@ -31,7 +37,7 @@ var Home = React.createClass({
 				height: '100%'
 			}}>
 				<StitchNavBar onSelect={this.handleSelect} display={this.state.display}/>
-				<AppMain setDisplay={this.setDisplay} display={this.state.display}/>
+				<AppMain setDisplay={this.setDisplay} setEvent={this.setEvent} display={this.state.display} event={this.state.event}/>
 			</div>
 		);
 	}

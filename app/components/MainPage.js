@@ -10,7 +10,7 @@ var MainPage = React.createClass({
 		return (
 			<div>
 				<MainPageSideBar />
-				<MainPageDisplay display={this.props.display}/>
+				<MainPageDisplay event={this.props.event}display={this.props.display}/>
 			</div>
 		);
 	}
@@ -18,7 +18,8 @@ var MainPage = React.createClass({
 });
 
 MainPage.propTypes = {
-	display: PropTypes.string.isRequired
+	display: PropTypes.string.isRequired,
+	event: PropTypes.string.isRequired
 }
 
 module.exports = MainPage;

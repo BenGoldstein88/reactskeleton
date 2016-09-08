@@ -33,17 +33,19 @@ var AppMain = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<AppNavBar onSelect={this.handleSelect} display={this.props.display}/>
-				<EventMain display={this.props.display}/>
+				<AppNavBar onSelect={this.handleSelect} display={this.props.display} event={this.props.event} setEvent={this.props.setEvent}/>
+				<EventMain display={this.props.display} event={this.props.event} setEvent={this.props.setEvent}/>
 			</div>
 		);
 	}
 
 });
 
-AppNavBar.propTypes = {
+AppMain.propTypes = {
 	display: PropTypes.string.isRequired,
-	setDisplay: PropTypes.func.isRequired
+	event: PropTypes.string.isRequired,
+	setDisplay: PropTypes.func.isRequired,
+	setEvent: PropTypes.func.isRequired
 }
 
 module.exports = AppMain;
