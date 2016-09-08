@@ -5,13 +5,14 @@ var SiteMapIcon = React.createClass({
 	render: function() {
 		return (
 			<div 
+				className='cut-diamond'
 				style={
 					{
 						'border': '1px solid red',
 						'minHeight': '30%'
 					}
 				}>  
-				<h1>Icon of thing. </h1>
+				
 
 			</div>
 		);

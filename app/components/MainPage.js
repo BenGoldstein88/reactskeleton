@@ -7,8 +7,8 @@ var MainPage = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<MainPageSideBar className='col-sm-3'/>
-				<MainPageDisplay className='col-sm-9'/>
+				<MainPageSideBar />
+				<MainPageDisplay />
 			</div>
 		);
 	}

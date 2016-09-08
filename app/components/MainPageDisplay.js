@@ -1,18 +1,22 @@
 var React = require('react');
+var MainPageDisplayBudget = require('./MainPageDisplayBudget')
 
 var MainPageDisplay = React.createClass({
 
 	render: function() {
+
+		var thingToDisplay = <MainPageDisplayBudget />
 		return (
 			<div 
 				className='col-sm-9'
 				style={
 					{
 						'minHeight': '90%',
-						'border': '1px solid purple'
+						'border': '1px solid purple',
+						position: 'relative'
 					}
 				}>
-				<h1> MainPageDisplay </h1>
+				{thingToDisplay}
 			</div>
 		);
 	}
