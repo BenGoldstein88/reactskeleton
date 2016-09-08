@@ -8,7 +8,7 @@ var RemindersBox = React.createClass({
 				style={
 					{
 						'border': '1px solid blue',
-						'minHeight': '30%'
+						'minHeight': '33.3%'
 					}
 				}> 
 				<h1> Reminders </h1>

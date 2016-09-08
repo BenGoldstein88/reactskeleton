@@ -18,6 +18,7 @@ var StitchNavBar = React.createClass({
 				</Navbar.Header>
 				<Navbar.Collapse>
 					<Nav pullRight>
+						<NavItem disabled={true}className='navbar-text'> Chuck & Larry </NavItem>
 						<NavItem eventKey={2} href='#'>Settings</NavItem>
 					</Nav>
 				</Navbar.Collapse>

@@ -7,10 +7,19 @@ var PropTypes = React.PropTypes
 var AppNavBar = React.createClass({
 
 	render: function() {
+		var activeKeyMap = {
+			'checklist': 1,
+			'budget': 2,
+			'timeline': 3,
+			'guestlist': 4,
+			'reminders': 5,
+			'seatingchart': 6 
+		}
+		var activeKey = activeKeyMap[this.props.display]
 		return (
 			<Navbar style={{'marginBottom': '0px'}}>
 				<Navbar.Collapse>
-					<Nav>
+					<Nav activeKey={activeKey}>
 						<NavItem eventKey={1} onSelect={this.props.onSelect} href='#'>Checklist </NavItem>
 						<NavItem eventKey={2} onSelect={this.props.onSelect} href='#'>Budget </NavItem>
 						<NavItem eventKey={3} onSelect={this.props.onSelect} href='#'>Timeline </NavItem>

@@ -6,7 +6,6 @@ var PropTypes = React.PropTypes
 var EventMain = React.createClass({
 
 	handleSelect: function(eventKey) {
-		console.log('eventKey', eventKey)
 		switch(eventKey) {
 			case 1:
 				this.props.setEvent('rehearsal')

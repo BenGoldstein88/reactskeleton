@@ -8,7 +8,7 @@ var SuggestionsBox = React.createClass({
 				style={
 					{
 						'border': '1px solid green',
-						'minHeight': '30%'
+						'minHeight': '33.3%'
 					}
 				}> 
 				<h1> Suggestions </h1>

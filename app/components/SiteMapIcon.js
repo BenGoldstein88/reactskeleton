@@ -9,7 +9,8 @@ var SiteMapIcon = React.createClass({
 				style={
 					{
 						'border': '1px solid red',
-						'minHeight': '30%'
+						'minHeight': '33.3%',
+						marginTop: '.05%'
 					}
 				}>  
 				

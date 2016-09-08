@@ -7,10 +7,16 @@ var PropTypes = React.PropTypes
 var EventNavBar = React.createClass({
 
 	render: function() {
+		var activeKeyMap = {
+			'rehearsal': 1,
+			'wedding': 2,
+			'brunch': 3 
+		}
+		var activeKey = activeKeyMap[this.props.event]
 		return (
 			<Navbar style={{'marginBottom': '0px'}}>
 				<Navbar.Collapse>
-					<Nav>
+					<Nav activeKey={activeKey}>
 						<NavItem eventKey={1} onSelect={this.props.onSelect} href='#'>Rehearsal</NavItem>
 						<NavItem eventKey={2} onSelect={this.props.onSelect} href='#'>Wedding</NavItem>
 						<NavItem eventKey={3} onSelect={this.props.onSelect} href='#'>Brunch</NavItem>
