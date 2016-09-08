@@ -1,10 +1,15 @@
 var React = require('react');
+var MainPageSideBar = require('./MainPageSidebar')
+var MainPageDisplay = require('./MainPageDisplay')
 
 var MainPage = React.createClass({
 
 	render: function() {
 		return (
-			<h1> Main Page </h1>
+			<div>
+				<MainPageSideBar className='col-sm-3'/>
+				<MainPageDisplay className='col-sm-9'/>
+			</div>
 		);
 	}
 
