@@ -2,6 +2,7 @@ var React = require('react');
 var SiteMapIcon = require('./SiteMapIcon')
 var RemindersBox = require('./RemindersBox')
 var SuggestionsBox = require('./SuggestionsBox')
+var PropTypes = React.PropTypes
 
 var MainPageSideBar = React.createClass({
 
@@ -11,7 +12,7 @@ var MainPageSideBar = React.createClass({
 				height: '100%',
 				border: '1px solid black'
 			}}>
-				<SiteMapIcon />
+				<SiteMapIcon onVenuesClick={this.props.onVenuesClick} />
 				<RemindersBox />
 				<SuggestionsBox />
 			</div>	
@@ -19,5 +20,9 @@ var MainPageSideBar = React.createClass({
 	}
 
 });
+
+MainPageSideBar.propTypes = {
+	onVenuesClick: PropTypes.func.isRequired
+}
 
 module.exports = MainPageSideBar;

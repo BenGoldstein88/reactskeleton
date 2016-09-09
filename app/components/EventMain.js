@@ -25,7 +25,7 @@ var EventMain = React.createClass({
 		return (
 			<div>
 				<EventNavBar event={this.props.event} onSelect={this.handleSelect}/>
-				<MainPage display={this.props.display} event={this.props.event}/>
+				<MainPage setDisplay={this.props.setDisplay} display={this.props.display} setEvent={this.props.setEvent} event={this.props.event}/>
 			</div>
 		);
 	}
@@ -35,7 +35,8 @@ var EventMain = React.createClass({
 EventMain.propTypes = {
 	display: PropTypes.string.isRequired,
 	event: PropTypes.string.isRequired,
-	setEvent: PropTypes.func.isRequired
+	setEvent: PropTypes.func.isRequired,
+	setDisplay: PropTypes.func.isRequired
 }
 
 module.exports = EventMain;

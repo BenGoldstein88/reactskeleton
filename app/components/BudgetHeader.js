@@ -1,4 +1,5 @@
 var React = require('react');
+var PropTypes = React.PropTypes
 
 var BudgetHeader = React.createClass({
 
@@ -9,7 +10,7 @@ var BudgetHeader = React.createClass({
 				textAlign: 'center',
 				marginTop: '2.5%'
 			}}>
-				<h1>Budget</h1>
+				<h1>Budget for {this.props.event}</h1>
 
 			</div>
 		);
@@ -17,4 +18,7 @@ var BudgetHeader = React.createClass({
 
 });
 
+BudgetHeader.propTypes = {
+	event: PropTypes.string.isRequired
+}
 module.exports = BudgetHeader;

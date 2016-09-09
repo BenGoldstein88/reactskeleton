@@ -34,7 +34,7 @@ var AppMain = React.createClass({
 		return (
 			<div>
 				<AppNavBar onSelect={this.handleSelect} display={this.props.display} event={this.props.event} setEvent={this.props.setEvent}/>
-				<EventMain display={this.props.display} event={this.props.event} setEvent={this.props.setEvent}/>
+				<EventMain display={this.props.display} event={this.props.event} setEvent={this.props.setEvent} setDisplay={this.props.setDisplay}/>
 			</div>
 		);
 	}
