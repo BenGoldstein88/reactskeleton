@@ -1,4 +1,5 @@
 var React = require('react');
+var PropTypes = React.PropTypes
 
 var VenueDetailsForm = React.createClass({
 
@@ -8,10 +9,14 @@ var VenueDetailsForm = React.createClass({
 				border: '1px dashed orange',
 				height: '100%'
 			}}>
-				<h2>Venue Details Stuff</h2>
+				<h2>Venue Details Stuff for {this.props.event}</h2>
 			</div>
 		);
 	}
 });
+
+VenueDetailsForm.propTypes = {
+	event: PropTypes.string.isRequired
+}
 
 module.exports = VenueDetailsForm;

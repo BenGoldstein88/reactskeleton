@@ -13,7 +13,7 @@ var MainPage = React.createClass({
 		return (
 			<div>
 				<MainPageSideBar onVenuesClick={this.handleVenuesClick} />
-				<MainPageDisplay setEvent={this.props.setEvent} event={this.props.event} setDisplay={this.props.setDisplay} display={this.props.display}/>
+				<MainPageDisplay onVenuesClick={this.handleVenuesClick} setEvent={this.props.setEvent} event={this.props.event} setDisplay={this.props.setDisplay} display={this.props.display}/>
 			</div>
 		);
 	}

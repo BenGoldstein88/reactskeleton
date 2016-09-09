@@ -8,7 +8,7 @@ var MainPageDisplayVenue = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<VenueDetailsForm />
+				<VenueDetailsForm event={this.props.event}/>
 				<VenueBudget onBudgetClick={this.props.onBudgetClick}/>
 			</div>
 		);
@@ -17,6 +17,7 @@ var MainPageDisplayVenue = React.createClass({
 });
 
 MainPageDisplayVenue.propTypes = {
-	onBudgetClick: PropTypes.func.isRequired
+	onBudgetClick: PropTypes.func.isRequired,
+	event: PropTypes.string.isRequired
 }
 module.exports = MainPageDisplayVenue;

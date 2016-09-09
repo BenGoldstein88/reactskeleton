@@ -1,6 +1,7 @@
 var React = require('react');
 var MainPageDisplayBudget = require('./MainPageDisplayBudget')
 var MainPageDisplayVenue = require('./MainPageDisplayVenue')
+var MainPageDisplayIcon = require('./MainPageDisplayIcon')
 var PropTypes = React.PropTypes;
 
 var MainPageDisplay = React.createClass({
@@ -30,10 +31,10 @@ var MainPageDisplay = React.createClass({
 				break;
 			case 'venues':
 				// this is temporary, as there should probably be a list of venues first
-				var thingToDisplay = <MainPageDisplayVenue onBudgetClick={this.handleBudgetClick}/>
+				var thingToDisplay = <MainPageDisplayVenue event={this.props.event} onBudgetClick={this.handleBudgetClick}/>
 				break;
 			default:
-				var thingToDisplay = <h1> This is the Home Page for the {this.props.event}</h1>
+				var thingToDisplay = <MainPageDisplayIcon onVenuesClick={this.props.onVenuesClick}/>
 
 		}
 		return (
@@ -57,7 +58,8 @@ MainPageDisplay.propTypes = {
 	display: PropTypes.string.isRequired,
 	event: PropTypes.string.isRequired,
 	setDisplay: PropTypes.func.isRequired,
-	setEvent: PropTypes.func.isRequired
+	setEvent: PropTypes.func.isRequired,
+	onVenuesClick: PropTypes.func.isRequired
 }
 
 module.exports = MainPageDisplay;
